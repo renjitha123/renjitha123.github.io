@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>A K Concepts</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+<!-- Css Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+	
+	margin-top:100px;
+	margin-left:2px;
+	margin-right:100px;
+	
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom:100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000b0;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+	
+  cursor: cell;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+	background-color:#09C;
+  transition: 0.3s;
+}
+img.hover-shadow:hover {
+	background-color:#09C;
+  
+}
+.hover-shadow{
+	
+	box-shadow: 0 4px 8px 0 rgb(8 8 8), 0 6px 20px 0 rgb(224 10 145 / 47%);
+
+	
+}
+	
+.hover-shadow:hover {
+	
+	
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+
+
+<body>
+    <!--==================================== Header Section Begin ====================================-->
+<header class="header-section">
+  <div class="container">
+    <div class="logo"> <a href="./index.html"> <img src="img/aklogo.jpg" alt=""> </a> </div>
+    <div class="nav-menu">
+      <nav class="mainmenu mobile-menu">
+        <ul>
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li ><a href="">Services</a></li>
+        <li><a href="">Reviews</a></li>
+          <li class="active"><a href="#">Gallery</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mobile-menu-wrap"></div>
+  </div>
+</header>
+<!--==================================== Header End ====================================--> 
+<!--==================================== Sticky Social icon Begin ====================================-->
+<ul class="ct-socials socialactive">
+  <li> <a href="https://www.facebook.com/AK-Concepts-107084260895396/" target="_blank"><i class="fa fa-facebook"></i></a> </li>
+ <li> <a href="https://instagram.com/akconceptskochi?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a> </li>
+   
+  <li> <a href="https://api.whatsapp.com/send?phone=919946689731&amp;" target="_blank"><i class="fa fa-whatsapp"></i></a> </li>
+</ul>
+<!--==================================== Sticky Social icon End ====================================--> 
+   <!-----========banner start=========----------->
+<section class="banner_area">
+            <div class="banner_inner banner_inner-gallery d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				
+            </div>
+        </section>
+
+<!-----========banner end=========----------->
+
+<section id="portfolio" class="portfolio section-bg team-gallery-section">
+      <div class="container">
+
+       
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Gallery</h2>
+                        <p>Bring color to your home.</p>
+                    </div>
+                </div>
+            </div>
+       
+
+        
+        
+        
+        
+  <div class="row portfolio-container">      
+      
+<div class="row">
+<div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+
+ 
+  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  
+ 
+  </div>
+ <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+ <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+ <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  
+  <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  
+  <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  
+  <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image14.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  
+   <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  
+   <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image13.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  
+  <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+  <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="col-lg-4 col-md-6 portfolio-item filter-app">  
+    <img src="img/gallery/akconcepts-house-painting-gallery-image12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      
+      <img src="img/gallery/akconcepts-house-painting-gallery-image1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+     
+      <img src="img/gallery/akconcepts-house-painting-gallery-image3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image4.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image14.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image8.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image13.jpg" style="width:100%">
+    </div>
+  <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image10.jpg" style="width:100%">
+    </div>
+   <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image11.jpg" style="width:100%">
+    </div>
+
+   <div class="mySlides">
+    
+      <img src="img/gallery/akconcepts-house-painting-gallery-image12.jpg" style="width:100%">
+    </div>
+
+  
+  </div>
+</div>
+
+        
+  </div>      
+        
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      </div>
+    </section>
+<!--==================================== Footer Begin ====================================-->
+<footer class="footer-section">
+        <div class="container">
+            <p>©AK Concepts - All rights reserved</p>
+            
+        </div>
+    </footer>
+    
+<!-- Js Plugins --> 
+<script src="js/jquery-3.3.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.slicknav.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<!------------  for gallery ------------->
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<!------------  for gallery ------------->
+</body>
+</html>

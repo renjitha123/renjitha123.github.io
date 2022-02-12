@@ -1309,14 +1309,114 @@ margin:15px
 }
 
 
+/*--------------------------------------------------------------
+# google form
+--------------------------------------------------------------*/
 
 
+.parallax-google {
+	background: linear-gradient(rgb(0 0 0 / 64%), rgb(0 0 0 / 64%)), url(../img/banner/ggg.jpeg) fixed center center;
+  /* The image used 
+  background-image:url(../img/banner/banner1.jpg);*/
+  /* Set a specific height */
+  min-height: 300px; 
 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  box-shadow: 0 0px 0px 0 rgb(0 0 0 / 20%), 0 9px 31px 0 rgb(0 0 0 / 72%);
+}
+.section-google{
+	margin-top: 40px;
+    text-align: center;
+    margin-bottom: 52px;
+}
+.section-google h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color:#FFF;
+    margin-bottom: 10px;
+}
+.section-google p {
+    font-size: 24px;
+    color: #ff206c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.googlebtn{
 
+background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.googlebtn:hover{
+
+background-color: #d3044a;
+border: 2px solid #d3044a;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  /*background-color: rgba(0,0,0,0.4);  Black w/ opacity */
+  background-color: rgb(0 0 0 / 75%);
+}
+
+
+
+
+/* Modal Content */
+.modal-content1 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 48%;
+}
+
+/* The Close Button */
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.wiframe{
+	/*width:auto;*/
+}
+
 .contact .info h3 {
     font-size: 36px;
     margin: 0px 0 37px 0;
@@ -1329,7 +1429,7 @@ margin:15px
 }
 .contact .contact-about h3 {
   font-size: 36px;
- margin: 35px 0 37px 0;
+ margin: 0px 0 37px 0;
   padding: 0;
   line-height: 1;
   font-weight: 300;
@@ -1470,10 +1570,46 @@ margin:15px
 
 .footer-section {
 	background: #171822;
-	padding: 35px;
+	padding: 25px;
+}
+.footer-section p{
+font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 /* ----------------------------------- Other Pages Styles ------------------------------- */
+
+
+/* ------------- gallery inner ---------------*/
+
+.banner_area {
+  position: relative;
+  z-index: 1;
+  min-height: 300px;
+}
+.banner_area .banner_inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 300px;
+  background: #000;
+  z-index: 1;
+}
+
+.banner_area .banner_inner-gallery  {
+  background: url(../img/banner/gallery-inner.jpg) no-repeat scroll center center !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  bottom: 0;
+  z-index: -1;
+  opacity: 1;
+}
+/* -------------end gallery inner ---------------*/
 
 
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
@@ -1482,11 +1618,15 @@ margin:15px
  .container {
  max-width: 1170px;
 }
+
 }
 
 /* Medium Device: 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.wiframe{
+	width:auto;
+}
  .nav-menu .mainmenu ul li {
  margin-right: 25px;
 }
@@ -1497,12 +1637,16 @@ margin:15px
     left: 77%;}
 }
  @media only screen and (max-width: 991px) {
+	 
 }
 
 /* Tablet Device: 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
- .nav-menu .primary-btn.top-btn {
+.wiframe{
+	width:auto;
+}
+.nav-menu .primary-btn.top-btn {
  display: none;
 }
  .nav-menu .mainmenu ul li {
@@ -1526,6 +1670,23 @@ margin:15px
 /* Large Mobile: 480px */
 
 @media only screen and (max-width: 767px) {
+.wiframe{
+	width:auto;
+}
+.section-google p {
+    font-size: 18px;
+}
+.service-section-title p {
+    font-size: 18px;
+}
+.modal-content1 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+}
+ 
  .slicknav_menu {
  display: block;
  background: transparent;
